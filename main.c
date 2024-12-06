@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
     }
 
     // Acceder a la interfaz position2d (necesaria para moverse)
-    position2d = playerc_position2d_create(client, 0);
+    position2d = playerc_position2d_create(client, 1);
     if (playerc_position2d_subscribe(position2d, PLAYER_OPEN_MODE) != 0)
     {
         fprintf(stderr, "Error al suscribir position2d.\n");
